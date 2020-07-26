@@ -1,12 +1,12 @@
 public class Main {
   public static void main(String[] args) {
-    System.out.println("植田");
-    System.out.println("25歳です");
-    System.out.println("お酒が好きです");
-    System.out.println("31 + 31の計算をします");
-    System.out.println(31 + 31);
-    int x;
-    x = 6;
-    System.out.println(x * x * 3.14);
+    final double pi = 3.14;
+    int pie = 5;
+    System.out.println("半径" + pie + "cmのパイの面積は、");
+    System.out.println(pie * pie * pi);
+    System.out.println("パイの半径を倍にします");
+    pie = 10;
+    System.out.println("半径" + pie + "cmのパイの面積は、");
+    System.out.println(pie * pie * pi);
   }
 }
