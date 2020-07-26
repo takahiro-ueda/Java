@@ -1,6 +1,8 @@
 public class lesson2 {
   public static void main(String[] args) {
-    String msg = "私の年齢は" + 23; /* 23(int型)が"23"(String型)に変換されて連結される */
-    System.out.println(msg);
+    String name = "植田"; 
+    String message;
+    message = name + "さん、こんにちは";
+    System.out.println(message);
   }
 }
