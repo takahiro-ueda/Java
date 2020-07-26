@@ -1,12 +1,9 @@
 public class Main {
   public static void main(String[] args) {
-    System.out.println("植田");
-    System.out.println("25歳です");
-    System.out.println("お酒が好きです");
-    System.out.println("31 + 31の計算をします");
-    System.out.println(31 + 31);
-    int x;
-    x = 6;
-    System.out.println(x * x * 3.14);
+    System.out.println("RPG:スッキリ魔王討伐");
+    System.out.println("Ver.0.1 by 湊");
+    System.out.println("<ただいま学習・制作中>");
+    System.out.println("プログラムを終了します");
+    
   }
 }
