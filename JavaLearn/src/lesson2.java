@@ -1,8 +1,6 @@
 public class lesson2 {
   public static void main(String[] args) {
-    double d = 8.5 / 2; /* 2(int型)を2.0(double型)に変更 */
-    long l = 5 + 2L;  /* 5(int型)を5L(long型)に変更 */
-    System.out.println(d);
-    System.out.println(l);
+    String msg = "私の年齢は" + 23; /* 23(int型)が"23"(String型)に変換されて連結される */
+    System.out.println(msg);
   }
 }
