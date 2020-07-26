@@ -1,5 +1,6 @@
 public class lesson2 {
   public static void main(String[] args) {
-    int i = 3.2; /* [大きな型の値を小さな型の変数に代入することは原則としてできない] */
+    int age = (int)3.2; /* [余程の理由がない限り使わない] */
+    System.out.println(age);
   }
 }
