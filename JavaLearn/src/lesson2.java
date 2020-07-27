@@ -14,6 +14,7 @@ public class lesson2 {
     System.out.println(ans);
     */
 
+    //練習問題2-3 回答
     System.out.println("ようこそ占いの館へ");
     System.out.println("あなたの名前を入力してください");
     String name = new java.util.Scanner(System.in).nextLine();
