@@ -1,6 +1,9 @@
 public class lesson4 {
   public static void main(String[] args) {
-    int [] scores = new int[5];
-    System.out.println(scores[0]) ;  //0が出力される（エラーにならない）
+    int [] scores = (20, 30, 40, 50, 80);
+    int sum = scores[1] + scores[2] + scores[3] + scores[4] + scores[5];
+    int avg = sum / scores.length;
+    System.out.println("合計点: " + sum);
+    System.out.println("平均点: " + avg);
   }
 }
