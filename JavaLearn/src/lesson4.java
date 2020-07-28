@@ -1,15 +1,6 @@
 public class lesson4 {
   public static void main(String[] args) {
-    int sansu = 20;
-    int kokugo = 30;
-    int rika = 40;
-    int eigo = 50;
-    int syakai = 80;
-
-    int sum = sansu + kokugo + rika + syakai + eigo;
-
-    int avg = sum / 5;
-    System.out.println("合計点:" + sum);
-    System.out.println("平均点:" + avg);
+    int[] scores; //int型の要素を代入できる配列変数scoresを用意([]が必要)
+    scores = new int[5];  //int型の要素を5つ作成してscoresに代入し、配列scoresの完成
   }
 }
