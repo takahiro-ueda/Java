@@ -1,21 +1,20 @@
 public class lesson3 {
   public static void main(String[] args) {
-    // boolean tenki = true;  //ここでtrueかfalseを代入
-    // if (tenki == true) {
-    //   System.out.println("洗濯をします");
-    //   System.out.println("散歩をします");
-    // } else //1行しかないので波カッコは省略可能
-    //   System.out.println("DVDを見ます");
     System.out.println("あなたの運勢を占います");
-    int fortune = new java.util.Random().nextInt(4) + 1;
-    if (fortune == 1) {
-      System.out.println("大吉");
-    } else if (fortune == 2) {
-      System.out.println("中吉");
-    } else if (fortune == 3) {
-      System.out.println("吉");
-    } else {
-      System.out.println("凶");
+    int fortune = 1;
+    switch (fortune) {
+      case 1:
+        System.out.println("大吉");
+        //ここにbreak;を入れ忘れている（条件に一致するcaseラベルまで処理をジャンプさせる命令）
+      case 2:
+        System.out.println("中吉");
+        break;
+      case 3:
+        System.out.println("吉");
+        break;
+      case 4:
+        System.out.println("凶");
+        break;
     }
   }
 }
