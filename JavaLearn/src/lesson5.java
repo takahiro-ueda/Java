@@ -1,12 +1,11 @@
 public class lesson5 {
   public static void main(String[] args) {
-    System.out.println("メソッドを呼び出します");
-    hello("植田");  //"植田"を渡してhelloメソッドを呼び出す
-    hello("朝香");  //"朝香"を渡してhelloメソッドを呼び出す
-    hello("菅原");  //"菅原"を渡してhelloメソッドを呼び出す
-    System.out.println("メソッドの呼び出しが終わりました");
+    add(100, 20); //100と20を渡してaddメソッドを呼び出す
+    add(200, 50); //200と50を渡してaddメソッドを呼び出す
   }
-  public static void hello(String name) {
-    System.out.println(name + "さん、こんにちは");
+  //複数の値を受け取るaddメソッド
+  public static void add(int x, int y) {
+    int ans = x + y;
+    System.out.println(x + "+" + y + "=" + ans);
   }
 }
