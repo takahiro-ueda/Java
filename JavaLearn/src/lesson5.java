@@ -16,4 +16,5 @@ public class lesson5 {
     System.out.println(add(3.5, 2.7));  //2つ目のaddメソッドが呼び出される
     System.out.println(add("Hello", "World"));  //3つ目のaddメソッドが呼び出される
   }
+  //仮引数が異なれば同じ名前のメリットを複数定義することが許されています
 }
