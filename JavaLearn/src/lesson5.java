@@ -1,13 +1,16 @@
 public class lesson5 {
-  //int型配列を受け取り、すべての要素を表示するメソッド
-  public static void printArray(int[] array) {  //int[]は引数に配列型を渡す
-    for (int element : array) {
-      System.out.println(element);
+  //int型配列を受け取り、配列内の要素全てに１を加えるメソッド
+  public static void incArray(int[] args) {
+    for (int i = 0; i < array.length; i++) {
+      array[i]++;
     }
   }
+  //↑結果をreturnで返していないためエラー
   public static void main(String[] args) {
     int[] array = {1, 2, 3};
-    printArray(array);  //配列を渡す
+    incArray(array);  //メソッド実行
+    for (int i : array) {
+      System.out.println(i);  //arrayの全要素を出力
+    }
   }
-  //printArrayメソッドに引数として渡しているのは、「配列まるごと」ではなくアドレス情報のみであることに注意
 }
