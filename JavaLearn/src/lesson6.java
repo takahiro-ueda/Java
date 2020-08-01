@@ -1,12 +1,11 @@
 package calcapp.main;
-
+import calcapp.logics.CalcLogic;
 
 public class lesson6 {
   public static void main(String[] args) {
     int a = 10; int b = 2;
-    int total = calcapp.logics.CalcLogic.tasu(a, b);
-    int delta = calcapp.logics.CalcLogic.hiku(a, b);
-    //  ↑ CalcLogicのtasu()やhiku()のように明示的に所属を示す必要がある
+    int total = CalcLogic.tasu(a, b); //FQCNでなくてもエラーにならない
+    int delta = calcapp.logics.CalcLogic.hiku(a, b);  //FQCNを指定してもよい
     System.out.println("足すと" + total +"、 引くと" + delta);
   }
 }
