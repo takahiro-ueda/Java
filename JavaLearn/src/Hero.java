@@ -1,12 +1,12 @@
 public class Hero {
-  //属性の定義
-  String name;
-  int hp;
+  // //属性の定義
+  // String name;
+  // int hp;
 
-  //操作の定義
-  public void attack() {}
-  public void sleep() {}
-  public void sit(int sec) {}
-  public void slip() {}
-  public void run () {}
+  // //操作の定義
+  // public void attack() {}
+  // public void sleep() {}
+  // public void sit(int sec) {}
+  // public void slip() {}
+  // public void run () {}
 }
