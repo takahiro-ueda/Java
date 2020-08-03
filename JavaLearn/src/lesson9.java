@@ -12,7 +12,7 @@ public class lesson9 {
     // w.heal(h1); //ミナトを回復させる(HP: 100 → 110)
     // w.heal(h2); //アサカを回復させる(HP: 100 → 110)
     // w.heal(h2); //アサカを回復させる(HP: 110 → 120)
-    String s = new String("こんにちは");
-    System.out.println(s);  //画面に「こんにちは」と表示させる
+    Hero h = new Hero();  //インスタンス生成と同時にコンストラクタによってHPに１００が代入される
+    System.out.println(h.hp); //「１００」と表示させる
   }
 }
