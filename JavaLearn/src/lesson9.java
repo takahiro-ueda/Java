@@ -2,7 +2,7 @@ public class lesson9 {
   public static void main(String[] args) {
     Hero h1;
     h1 = new Hero();
-    h.hp = 100;
+    h1.hp = 100;
     Hero h2;
     h2 = h1;
     h2.hp = 200;
