@@ -14,5 +14,6 @@ public class lesson9 {
     // w.heal(h2); //アサカを回復させる(HP: 110 → 120)
     Hero h = new Hero();  //インスタンス生成と同時にコンストラクタによってHPに１００が代入される
     System.out.println(h.hp); //「１００」と表示させる
+    System.out.println(h.name); //「ミナト」と表示される
   }
 }
