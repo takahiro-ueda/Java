@@ -1,12 +1,16 @@
 public class lesson9 {
   public static void main(String[] args) {
-    Sword s = new Sword();
-    s.name = "炎の剣";
-    s.damage = 10;
-    Hero h = new Hero();
-    h.name = "ミナト";
-    h.hp = 100;
-    h.sword = s;  //swordフィールドに生成済みのインスタンス(の番地)を代入
-    System.out.println("現在の武器は" + h.sword.name);  //勇者「の」剣「の」
+    Hero h1 = new Hero();
+    h1.name = "ミナト";
+    h1.hp = 100;
+    Hero h2 = new Hero();
+    h2.name = "アサカ";
+    h2.hp = 100;
+    Wizard w = new Wizard();
+    w name = "スガワラ";
+    w.hp = 50;
+    w.heal(h1); //ミナトを回復させる(HP: 100 → 110)
+    w.heal(h2); //アサカを回復させる(HP: 100 → 110)
+    w.heal(h2); //アサカを回復させる(HP: 110 → 120)
   }
 }
