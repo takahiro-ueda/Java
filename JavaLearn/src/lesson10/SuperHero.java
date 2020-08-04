@@ -1,23 +1,24 @@
 package lesson10;
 
-public class SuperHero {
-  String name = "ミナト";
-  int hp = 100;
-  boolean flying;
+public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣言
+  // String name = "ミナト";
+  // int hp = 100;
+  // boolean flying;
 
-  //戦う
-  public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃！！！");
-    m.hp -= 5;
-    System.out.println("5ポイントのダメージをあたえた！！");
-  }
+  // //戦う
+  // public void attack(Matango m) {
+  //   System.out.println(this.name + "の攻撃！！！");
+  //   m.hp -= 5;
+  //   System.out.println("5ポイントのダメージをあたえた！！");
+  // }
 
-  //逃げる
-  public void run() {
-    System.out.println(this.name + "は逃げ出した！！！");
-  }
+  // //逃げる
+  // public void run() {
+  //   System.out.println(this.name + "は逃げ出した！！！");
+  // }
 
   //飛ぶ
+  boolean flying;
   public void fly() {
     this.flying = true;
     System.out.println("飛び上がった！！");
