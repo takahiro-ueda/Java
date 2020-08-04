@@ -7,12 +7,11 @@ public class Hero9 {
     System.out.println(this.name + "は攻撃した！！！");
     System.out.println("敵に5ポイントのダメージをあたえた！！！");
   }
-  public Hero(String name) {
+  public Hero(String name) {  //コンスタント1
     this.hp = 100;  //hpフィールドを100で初期化
     this.name = name; //引数の値でnameフィールドを初期化
   }
-  public Hero() { //新しく作ったコンストラクタ
-    this.hp = 100;
-    this.name = "ダミー"; //ダミーの名前を設定
+  public Hero() { //コンストラクタ2
+    this.Hero("ダミー"); //コンストラクタ1を呼び出したいが、この行はエラーになるのでダメ！！！
   }
 }
