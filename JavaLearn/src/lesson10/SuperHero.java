@@ -5,6 +5,13 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
   // int hp = 100;
   // boolean flying;
 
+  public void attack(Matango m) {
+    super.attack(m);
+    if (this.flying) {
+      super.attack(m);
+    }
+  }
+
   //飛ぶ
   boolean flying;
   public void fly() {
