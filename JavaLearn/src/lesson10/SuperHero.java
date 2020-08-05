@@ -12,6 +12,10 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
     }
   }
 
+  public SuperHero() {
+    System.out.println("SuperHeroのコンストラクタが動作");
+  }
+
   //飛ぶ
   boolean flying;
   public void fly() {
