@@ -11,8 +11,8 @@ public class Character {
 
   //戦う
   public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃！");
-    m.hp -= ??; //ここを記述しようとして手が止まる
-    System.out.println("敵に？？ポイントのダメージをあたえた！");
+    // System.out.println(this.name + "の攻撃！");
+    // m.hp -= ??; //ここを記述しようとして手が止まる
+    // System.out.println("敵に？？ポイントのダメージをあたえた！");
   }
 }
