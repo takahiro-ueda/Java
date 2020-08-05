@@ -5,13 +5,6 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
   // int hp = 100;
   // boolean flying;
 
-  // //戦う
-  // public void attack(Matango m) {
-  //   System.out.println(this.name + "の攻撃！！！");
-  //   m.hp -= 5;
-  //   System.out.println("5ポイントのダメージをあたえた！！");
-  // }
-
   //飛ぶ
   boolean flying;
   public void fly() {
@@ -28,5 +21,17 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
   //逃げる
   public void run() {
     System.out.println(this.name + "は撤退した！！！！");
+  }
+
+  //戦う
+  public void attack(Matango m) {
+    System.out.println(this.name + "の攻撃！！！");
+    m.hp -= 5;
+    System.out.println("5ポイントのダメージをあたえた！！");
+    if (this.flying) {  //飛んでいる状態でのみ、2回目の攻撃をする
+      System.out.println(this.name + "の攻撃！！");
+      m.hp -= 5;
+      System.out.println("5ポイントのダメージをあたえた！");
+    }
   }
 }
