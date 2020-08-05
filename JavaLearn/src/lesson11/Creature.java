@@ -1,5 +1,5 @@
 package lesson11;
 
 public interface Creature {
-  public abstract void run();
+  void run(); //public abstractを省略しても大丈夫
 }
