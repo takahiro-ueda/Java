@@ -12,11 +12,6 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
   //   System.out.println("5ポイントのダメージをあたえた！！");
   // }
 
-  // //逃げる
-  // public void run() {
-  //   System.out.println(this.name + "は逃げ出した！！！");
-  // }
-
   //飛ぶ
   boolean flying;
   public void fly() {
@@ -28,5 +23,10 @@ public class SuperHero extends Hero { //「基本的にはHeroと同じ」と宣
   public void land() {
     this.flying = false;
     System.out.println("着地した");
+  }
+
+  //逃げる
+  public void run() {
+    System.out.println(this.name + "は撤退した！！！！");
   }
 }
