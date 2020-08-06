@@ -26,7 +26,7 @@ public class Hero {
       this.die();
     }
   }
-  public String getName() {
-    return this.name;
+  public void getName(String name) {
+    this.name = name;
   }
 }
