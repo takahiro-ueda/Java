@@ -12,22 +12,17 @@ public class Main {
     // Slime s = new Slime(); Monster m = new Slime();
     // s.run(); m.run();
 
-    Hero h1 = new Hero();
-    Hero h2 = new Hero();
-    Thief t1 = new Thief();
-    Wizard w1 = new Wizard();
-    Wizard w2 = new Wizard();
+    Character[] c = new Character[5];
+    c[0] = new Hero();
+    c[1] = new Hero();
+    c[2] = new Hero();
+    c[3] = new Hero();
+    c[4] = new Hero();
+
     //冒険開始！！
     //まず宿屋に泊まる
-    h1.hp += 50;
-    h2.hp += 50;
-    t1.hp += 50;
-    w1.hp += 50;
-    w2.hp += 50;
-    /* 
-    ※このコードの前提
-    ・HeroやWizard、Thiefは、抽象クラスCharacterを継承している。
-    ・Characterはnameとhpフィールド、attack()とrun()のメソッドを持つ。
-    */
+    for (Character ch : c) {  //1名ずつ順に取り出し
+      ch.hp += 50;  //HPを50回復する
+    }
   }
 }
