@@ -2,8 +2,16 @@ package lesson13;
 
 public class Hero {
   private int hp;
-  String name;
-  Sword sword;
+  // String name;
+  // Sword sword;
+
+  private String name;
+  public String getName() {
+    return this.name;
+  }
+  public void getName(String name) {
+    this.name = name;
+  }
 
   public void bye() {
     System.out.println("勇者は別れを告げた");
@@ -25,8 +33,5 @@ public class Hero {
     if (this.hp <= 0 ) {
       this.die();
     }
-  }
-  public void getName(String name) {
-    this.name = name;
   }
 }
