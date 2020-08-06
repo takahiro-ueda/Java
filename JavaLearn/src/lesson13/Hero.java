@@ -1,14 +1,31 @@
 package lesson13;
 
 public class Hero {
-  int hp;
-  String name;
-  Sword sword;
+  private int hp;
+  // String name;
+  // Sword sword;
+
+  private String name;
+  public String getName() {
+    return this.name;
+  }
+  public void getName(String name) {
+    if (name == null) { //名前にnullが代入されそうになった！
+      throw new IllegalArgumentException("名前がnullである。処理中断！！");
+    }
+    if (name.length() <= 1) { //短すぎる名前が設定されそうになった！
+      throw new IllegalArgumentException("名前が短すぎる。処理中断。");
+    }
+    if (name.length() >= 8) { //長すぎる名前が設定されそうになった！
+      throw new IllegalArgumentException("名前が長すぎる。処理を中断。");
+    }
+    this.name = name; //検査完了。代入しても大丈夫
+  }
 
   public void bye() {
     System.out.println("勇者は別れを告げた");
   }
-  public void die() {
+  private void die() {
     System.out.println(this.name + "は死んでしまった！");
     System.out.println("GAME OVERです！！");
   }
