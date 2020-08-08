@@ -1,9 +1,9 @@
 package lesson14;
 
 public class Hero {
-  int hp;
   String name;
-  Sword sword;
+  int hp;
+  int money;
 
   public void bye() {
     System.out.println("勇者は別れを告げた");
