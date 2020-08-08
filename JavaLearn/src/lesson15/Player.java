@@ -17,5 +17,9 @@ public class Player {
     }
     return true;
     // return name.matches("[A-Z][A-Z0-9]{7}");
+
+    // finalString FORMAT = "%-9s %-13s 所持金%,6d";
+    // String s = String.format(FORMAT, hero.getName(), hero.getJob(), hero.getGold());
+    // System.out.println(s);
   }
 }
