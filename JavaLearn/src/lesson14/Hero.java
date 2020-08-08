@@ -3,7 +3,7 @@ package lesson14;
 public class Hero {
   String name;
   int hp;
-  int money;
+  static int money; //静的フィールド
 
   public void bye() {
     System.out.println("勇者は別れを告げた");
