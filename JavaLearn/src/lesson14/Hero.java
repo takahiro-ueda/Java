@@ -41,5 +41,6 @@ public class Hero {
   }
   public static void setRandomMoney() { //staticを付けたメソッド
     Hero.money = (int)(Math.random() * 1000);
+    System.out.println(this.name + "たちの所持金を初期化しました"); //thisの部分でエラー
   }
 }
