@@ -39,4 +39,7 @@ public class Hero {
     }
     return false;
   }
+  public static void setRandomMoney() { //staticを付けたメソッド
+    Hero.money = (int)(Math.random() * 1000);
+  }
 }
