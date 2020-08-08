@@ -1,20 +1,17 @@
 package lesson15;
-import java.util.Calendar;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Main {
-  public static void main(String[] args) {
-    Calendar c = Calendar.getInstance();
-    //6つのint値からDateインスタンスを作成
-    c.set(2020,8,8,1,23,45);
-    c.set(Calendar.MONTH, 9); //月を9(10月)に変更
-    Date d = c.getTime();
+  public static void main(String[] args) throws Exception {
+    SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/ dd HH:mm:ss");
+    //文字列からDateインスタンスを生成
+    Date d = f.parse("2020/09/22 01:23:45");
     System.out.println(d);
-    //Dateインスタンスからint値を作成
-    Date now = new Date();  //現在の日時を習得
-    c.setTime(now);
-    int y = c.get(Calendar.YEAR); //年を取り出す
-    System.out.println("今年は" + y + "年です！！");
+    //Dateインスタンスから文字列を生成
+    Date now = new Date();
+    String s = f.format(now);
+    System.out.println("現在は" + s + "です！！");
 
     // 処理時間を計測
     // long start = System.currentTimeMillis();
