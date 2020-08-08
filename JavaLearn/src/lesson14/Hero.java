@@ -29,4 +29,14 @@ public class Hero {
   public String toString() {  //オーバーライドする
     return "名前：" + this.name + "/HP：" + this.hp;
   }
+  public boolean equals(Object o) {
+    if (this == o) {return true;} //等値なら間違いなく等値
+    if (o instanceof Hero) {
+      Hero h = (Hero)o;
+      if (this.name.equals(h.name)) { //名前が等しければ等値
+        return true;
+      }
+    }
+    return false;
+  }
 }
