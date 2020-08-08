@@ -2,13 +2,20 @@ package lesson15;
 
 public class Main {
   public static void main(String[] args) {
-    String s = "abc,def:ghi";
+    long start = System.currentTimeMillis();
+    //ここで何らかの時間がかかる処理
+    long end = System.currentTimeMillis();
+    System.out.println("処理にかかった時間は・・・・" + (end - start) + "ミリ秒でした");
+
+    // String s = "abc,def:ghi";
     // String[] words = s.split("[,:]"); //正規表記パターン
     // for (String w : words) {
     //   System.out.println(w + "->");
     // }
-    String w = s.replaceAll("[beh]","X");
-    System.out.println(w);  // aXc,dXf:gXi
+
+    // String s = "abc,def:ghi";
+    // String w = s.replaceAll("[beh]","X");
+    // System.out.println(w);  // aXc,dXf:gXi
 
     // StringBuilder sb = new StringBuilder();
     // for (int i = 0; i < 10000; i++) {
