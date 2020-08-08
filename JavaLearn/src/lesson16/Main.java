@@ -7,12 +7,10 @@ public class Main {
      //ペアで値を格納
     prefs.put("京都府", 255);
     prefs.put("東京都", 1261);
-    prefs.put("熊本県", 181);
-    int tokyo = prefs.get("東京都"); //キーを指定して値を取得
-    System.out.println("東京都の人口は" + tokyo);
-    prefs.remove("京都府");
-    prefs.put("熊本県", 182); //値を182で上書き
-    int kumamoto = prefs.get("熊本県");
-    System.out.println("熊本県の人口は、" + kumamoto);
+    prefs.put("熊本県", 182);
+    for (String key : prefs.keySet()) { //県名一覧を取得し繰り返す
+      int value = prefs.get(key); //県名(キー)を指定し人口(値)を取得
+      System.out.println(key + "の人口は、" + value);
+    }
   }
 }
