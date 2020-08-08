@@ -2,11 +2,17 @@ package lesson15;
 
 public class Main {
   public static void main(String[] args) {
-    StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < 10000; i++) {
-      sb.append("Java");  //①バッファにJavaを追加
+    String s = "abc,def:ghi";
+    String[] words = s.split("[,:]"); //正規表記パターン
+    for (String w : words) {
+      System.out.println(w + "->");
     }
-    String s = sb.toString(); //②完成した連結済み文字列を取り出す
+
+    // StringBuilder sb = new StringBuilder();
+    // for (int i = 0; i < 10000; i++) {
+    //   sb.append("Java");  //①バッファにJavaを追加
+    // }
+    // String s = sb.toString(); //②完成した連結済み文字列を取り出す
 
     // String s1 = "Java programming";
     // System.out.println("文字列s1の4文字目以降は" + s1.substring(3));  // => a programming
