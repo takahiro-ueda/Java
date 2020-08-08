@@ -1,14 +1,20 @@
 package lesson15;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
   public static void main(String[] args) {
-    //現在日時を表示する
+    Calendar c = Calendar.getInstance();
+    //6つのint値からDateインスタンスを作成
+    c.set(2020,8,8,1,23,45);
+    c.set(Calendar.MONTH, 9); //月を9(10月)に変更
+    Date d = c.getTime();
+    System.out.println(d);
+    //Dateインスタンスからint値を作成
     Date now = new Date();  //現在の日時を習得
-    System.out.println(now);
-    System.out.println(now.getTime());
-    Date past = new Date(1600705425827L);
-    System.out.println(past);
+    c.setTime(now);
+    int y = c.get(Calendar.YEAR); //年を取り出す
+    System.out.println("今年は" + y + "年です！！");
 
     // 処理時間を計測
     // long start = System.currentTimeMillis();
