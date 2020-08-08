@@ -2,10 +2,16 @@ package lesson15;
 
 public class Main {
   public static void main(String[] args) {
-    String s1 = "Java programming";
-    System.out.println("文字列s1の4文字目以降は" + s1.substring(3));  // => a programming
-    System.out.println("文字列s1の4~8文字目は" + s1.substring(3, 8)); // => a pro
-    
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < 10000; i++) {
+      sb.append("Java");  //①バッファにJavaを追加
+    }
+    String s = sb.toString(); //②完成した連結済み文字列を取り出す
+
+    // String s1 = "Java programming";
+    // System.out.println("文字列s1の4文字目以降は" + s1.substring(3));  // => a programming
+    // System.out.println("文字列s1の4~8文字目は" + s1.substring(3, 8)); // => a pro
+
     // String s1 = "Java and JavaScript";
     // if (s1.contains("Java")) {
     //   System.out.println("文字列s1は、Javaを含んでいます");
