@@ -15,6 +15,7 @@ public class Player {
         return false;
       }
     }
+    return true;
+    // return name.matches("[A-Z][A-Z0-9]{7}");
   }
-  return true;
 }
