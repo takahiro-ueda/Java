@@ -3,7 +3,10 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) {
-    FileWriter fw = new FileWriter("date.txt");
-    //FileWriterのコンストラクタはIOExceptionを発生させる可能性があるか、try-catch文を記述していない(失敗時にどうするか考えていない)
+    try {
+      FileWriter fw = new FileWriter("data.txt");
+    } catch (IOException e) {
+      System.out.println("エラーが発生しました！"); //例外的状況になったときに備えて記述された代替処理
+    }
   }
 }
