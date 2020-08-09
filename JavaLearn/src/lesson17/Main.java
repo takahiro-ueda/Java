@@ -11,10 +11,12 @@ public class Main {
     } catch (IOException e) { 
       System.out.println("何らかの例外が発生しました"); //例外的状況になったときに備えて記述された代替処理
     } finally {
-      try {
-        fw.close();
-      } catch (IOException e) {
-        ;
+      if (fw != null) { //fwがnullではない時だけclose()を試みる
+        try {
+          fw.close();
+        } catch (IOException e) {
+          ;
+        }
       }
     }
   }
