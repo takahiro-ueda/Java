@@ -1,0 +1,154 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-App<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Pain<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "Pain",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "comment.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson1<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson1",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson10<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson10.lesson10",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(1)",
+      "request": "launch",
+      "mainClass": "lesson11.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(2)",
+      "request": "launch",
+      "mainClass": "lesson12.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(3)",
+      "request": "launch",
+      "mainClass": "lesson13.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(4)",
+      "request": "launch",
+      "mainClass": "lesson14.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(5)",
+      "request": "launch",
+      "mainClass": "lesson15.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(6)",
+      "request": "launch",
+      "mainClass": "lesson16.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(7)",
+      "request": "launch",
+      "mainClass": "lesson17.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Main<JavaLearn_50e78fc0>(8)",
+      "request": "launch",
+      "mainClass": "lesson18.Main",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson2<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson2",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson3<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson3",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson4<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson4",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson5<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson5",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson6<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson6",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-lesson9<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "lesson9",
+      "projectName": "JavaLearn_50e78fc0"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-sub<JavaLearn_50e78fc0>",
+      "request": "launch",
+      "mainClass": "sub",
+      "projectName": "JavaLearn_50e78fc0"
+    }
+  ]
+}
