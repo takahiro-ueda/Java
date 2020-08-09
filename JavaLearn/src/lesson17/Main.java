@@ -3,13 +3,14 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) {
-    FileWriter fw = null;
+    // FileWriter fw = null;
     try {
-      fw = new FileWriter("data.txt");
+      FileWriter fw = new FileWriter("data.txt");
       fw.write("hello!");
     } catch (IOException e) { 
-      System.out.println("エラーです！！"); //例外的状況になったときに備えて記述された代替処理
+      System.out.println("何らかのエラーが発生する"); //例外的状況になったときに備えて記述された代替処理
+    } finally {
+      fw.close(); //この行でエラー
     }
-    fw.close(); //try-catchの後でcloseする
   }
 }
