@@ -1,14 +1,16 @@
 package lesson18;
-import java.io.*;
+import java.io.InputStream;
+import java.net.URL;
 
 public class Main {
   public static void main(String[] args) throws Exception {
-    // FileReader fr = new FileReader("data.txt"); //ファイルを開く
-    FileWriter fw = new FileWriter("data.txt"); //ファイルを開く
-    fw.write('そ');
-    fw.write('れ');
-    fw.write('で');
-    fw.write('は');
-    fw.close(); //ファイルを閉じる
+    URL u = new URL("https://book.impress.co.jp/");
+    InputStream is = u.openStream();  //インターネットへ接続
+    int i = is.read();
+    while (i != -1) { //ページの終わりまで繰り返す
+      char c = (char)i;
+      System.out.print(c);  //読んだ内容を画面に表示
+      i = is.read();
+    }
   }
 }
